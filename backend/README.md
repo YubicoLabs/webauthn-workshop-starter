@@ -10,12 +10,12 @@ To use this backend with our simple WebAuthn demo, proceed as follows:
 
 1. Pull the backend docker image from Docker Hub.
 
-    docker pull joostvandijk327/demos:passkey_services
+	docker pull joostvandijk327/demos:passkey_services
 
 2. Run the backend in a container.
 
 
-    docker run --rm --name rp \
+	docker run --rm --name rp \
 	-e RP_NAME=Demo \
 	-e RP_ID=localhost \
 	-e RP_ALLOWED_ORIGINS=localhost:8000 \
@@ -29,13 +29,13 @@ To use this backend with our simple WebAuthn demo, proceed as follows:
 
 3. Check if the backend is alive.
 
-    curl -s http://localhost:8080/v1/status
+	curl -s http://localhost:8080/v1/status
 
 4. Inspect the API using your browser at [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
 
 5. Again, run a web server so you can access its files on localhost. For instance:
 
-    python3 -m http.server 8000
+	python3 -m http.server 8000
 
 6. Open [http://localhost:8000/](http://localhost:8000/) in Chrome.
 
