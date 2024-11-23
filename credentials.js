@@ -1,3 +1,8 @@
+// simple javascript-only demonstration of the WebAuthn API
+// run in a recent browser like Chrome over https or http://localhost
+
+// NOTE: in other browsers, you may need some polyfills:
+// https://github.com/MasterKale/webauthn-polyfills
 
 const ES256 = -7; // ECDSA w/ SHA-256
 const RS256 = -257; // RSA w/ SHA-256

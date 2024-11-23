@@ -1,3 +1,11 @@
+// simple demonstration of the WebAuthn API with a backend RP server
+// See README for instructions to run the backend
+// run in a recent browser like Chrome over https or http://localhost
+
+// NOTE: in other browsers, you may need some polyfills:
+// https://github.com/MasterKale/webauthn-polyfills
+
+
 // the webauthn API base URI
 const api = "http://localhost:8080/v1";
 // See http://localhost:8080/swagger-ui/index.html
