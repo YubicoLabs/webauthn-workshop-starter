@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  .button { color: white; background-color: teal; padding: 15px 15px; margin: 4px 2px; }
+  .code { color: red; }
+  </style>
+  <script src="credentials.js"> </script>
+</head>
+
+<body onLoad="onLoadHandler()">
+
+<div>
+    <button class="button" id="registerButton">Register</button>
+    <button class="button" id="authenticateButton">Authenticate</button>
+</div>
+
+<hr/>
+
+<p>Use <code>chrome://settings/securityKeys/</code> to delete the credential with username <code>deleteMe</code> when done.
+
+<div id="message" class="info"></div>
+
+<script>
+function onLoadHandler() {
+    document.getElementById("registerButton").addEventListener("click", register);
+    document.getElementById("authenticateButton").addEventListener("click", authenticate);
+}
+</script>
+
+</body>
+</html>
